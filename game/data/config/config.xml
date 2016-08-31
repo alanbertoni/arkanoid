@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<Config>
+	<Graphics width="400" height="427" windowTitle="Arkanoid Game" targetFPS="60" renderer="D3D11" />
+	<GameLogic script="data/assets/script/GameLogic.lua">
+		<Actors filename="data/assets/actors.xml" />
+	</GameLogic>
+	<Logging filenameTemplate="log/log">
+<!--
+		<Log tag="ERROR" debugger="1" file="1"/>
+		<Log tag="WARNING" debugger="1" file="1"/>
+		<Log tag="INFO" debugger="1" file="1"/>
+-->
+		<Log tag="LOGIC" debugger="1" file="1"/>
+		<Log tag="ACTOR" debugger="1" file="1"/>
+	</Logging>
+</Config>
+ 

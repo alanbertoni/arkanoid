@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:6a79dc431d8e212104deb54398204642:65817edb96dae1b8bdbb03dba7b3de3d:530a0f5ef61e68afad94193e4d541c98$ -->
+<!--Format:
+n  => name of the sprite
+x  => sprite x pos in texture
+y  => sprite y pos in texture
+w  => sprite width (may be trimmed)
+h  => sprite height (may be trimmed)
+pX => x pos of the pivot point (relative to sprite width)
+pY => y pos of the pivot point (relative to sprite height)
+oX => sprite's x-corner offset (only available if trimmed)
+oY => sprite's y-corner offset (only available if trimmed)
+oW => sprite's original width (only available if trimmed)
+oH => sprite's original height (only available if trimmed)
+r => 'y' only set if sprite is rotated
+with polygon mode enabled:
+vertices   => points in sprite coordinate system (x0,y0,x1,y1,x2,y2, ...)
+verticesUV => points in sheet coordinate system (x0,y0,x1,y1,x2,y2, ...)
+triangles  => sprite triangulation, 3 vertex indices per triangle
+-->
+<TextureAtlas imagePath="arkanoid.png" width="224" height="256">
+    <sprite n="background.png" x="0" y="16" w="224" h="240" pX="0.5" pY="0.5"/>
+    <sprite n="ball-1.png" x="64" y="0" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="ball.png" x="80" y="0" w="16" h="16" pX="0.5" pY="0.5"/>
+    <sprite n="brick.png" x="96" y="0" w="17" h="9" pX="0.5" pY="0.5"/>
+    <sprite n="paddle-border.png" x="32" y="0" w="16" h="9" pX="0.5" pY="0.5"/>
+    <sprite n="paddle.png" x="16" y="0" w="16" h="8" pX="0.5" pY="0.5"/>
+    <sprite n="powerup-1.png" x="0" y="0" w="16" h="7" pX="0.5" pY="0.5"/>
+    <sprite n="powerup.png" x="48" y="0" w="16" h="7" pX="0.5" pY="0.5"/>
+</TextureAtlas>

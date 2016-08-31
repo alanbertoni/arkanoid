@@ -1,0 +1,155 @@
+<?xml version="1.0" ?>
+<Actors>
+	<Actor type="BACKGROUND">
+		<TransformComponent>
+			<Position x="0.0" y="0.0" z="0.1" />
+			<Scale factor="2.0"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<RendererComponent>
+			<Mesh shape="QUAD"/>
+			<Material type="UnlitTextured">
+				<Color>
+					<DiffuseColor r="255" g="255" b="255" a="255" />
+				</Color>
+				<Texture offsetX="0" offsetY="16" width="224" height="240" textureWidth="224" textureHeight="256" filename="data/assets/texture/arkanoid.png" />
+			</Material>
+		</RendererComponent>
+		<AudioSourceComponent>
+			<File value="data/assets/audio/background-mecha-world-short.wav"/>
+			<Position x="0" y="0" z="0"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="-1"/>
+			<Volume value="0.3"/>
+			<Pitch value="1"/>
+			<Loop value="true"/>
+		</AudioSourceComponent>
+	</Actor>
+	<Actor type="BALL">
+		<TransformComponent>
+			<Position x="0.0" y="-0.85" z="0.1" />
+			<Scale factor="0.05"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<RendererComponent>
+			<Mesh shape="QUAD"/>
+			<Material type="UnlitTextured">
+				<Color>
+					<DiffuseColor r="255" g="255" b="255" a="255" />
+				</Color>
+				<Texture offsetX="64" offsetY="0" width="16" height="16" textureWidth="224" textureHeight="256" filename="data/assets/texture/arkanoid.png" />
+			</Material>
+		</RendererComponent>
+		<ScriptComponent filename="data/assets/script/BallBehaviour.lua" />
+		<ColliderComponent type="DYNAMIC" isTrigger="false" tag="ITEM" tagMask="ENEMY|PLAYER" width="0.09" height="0.09" />
+		<AudioSourceComponent>
+			<File value="data/assets/audio/bounce.ogg"/>
+			<Position x="0" y="0" z="0"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="-1"/>
+			<Volume value="1"/>
+			<Pitch value="1"/>
+			<Loop value="false"/>
+		</AudioSourceComponent>
+	</Actor>
+	<Actor type="BRICK">
+		<TransformComponent>
+			<Position x="0.0" y="0.0" z="0.1" />
+			<Scale factor="0.15"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<RendererComponent>
+			<Mesh shape="QUAD2W1H"/>
+			<Material type="UnlitTextured">
+				<Color>
+					<DiffuseColor r="255" g="255" b="255" a="255" />
+				</Color>
+				<Texture offsetX="96" offsetY="0" width="17" height="9" textureWidth="224" textureHeight="256" filename="data/assets/texture/arkanoid.png" />
+			</Material>
+		</RendererComponent>
+		<ScriptComponent filename="data/assets/script/BrickBehaviour.lua" />
+		<ColliderComponent type="STATIC" isTrigger="false"  tag="ENEMY" tagMask="ITEM" width="0.075" height="0.0375" />
+		<AudioSourceComponent>
+			<File value="data/assets/audio/explosion-laser.ogg"/>
+			<Position x="0" y="0" z="0"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="-1"/>
+			<Volume value="1"/>
+			<Pitch value="1"/>
+			<Loop value="false"/>
+		</AudioSourceComponent>
+	</Actor>
+	<Actor type="PADDLE">
+		<TransformComponent>
+			<Position x="0.0" y="-0.95" z="0.1" />
+			<Scale factor="0.20"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<RendererComponent>
+			<Mesh shape="QUAD2W1H"/>
+			<Material type="UnlitTextured">
+				<Color>
+					<DiffuseColor r="255" g="255" b="255" a="255" />
+				</Color>
+				<Texture offsetX="32" offsetY="0" width="16" height="9" textureWidth="224" textureHeight="256" filename="data/assets/texture/arkanoid.png" />
+			</Material>
+		</RendererComponent>
+		<ScriptComponent filename="data/assets/script/PaddleBehaviour.lua" />
+		<ColliderComponent type="KINEMATIC" isTrigger="false" tag="PLAYER" tagMask="ITEM" width="0.11" height="0.06" />
+		<AudioSourceComponent>
+			<File value="data/assets/audio/bounce-paddle.ogg"/>
+			<Position x="0" y="0" z="0"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="-1"/>
+			<Volume value="1"/>
+			<Pitch value="1"/>
+			<Loop value="false"/>
+		</AudioSourceComponent>
+	</Actor>
+	<Actor type="POWERUP">
+		<TransformComponent>
+			<Position x="0.0" y="0" z="0.0" />
+			<Scale factor="0.10"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<RendererComponent>
+			<Mesh shape="QUAD2W1H"/>
+			<Material type="UnlitTextured">
+				<Color>
+					<DiffuseColor r="255" g="255" b="255" a="255" />
+				</Color>
+				<Texture offsetX="0" offsetY="0" width="16" height="7" textureWidth="224" textureHeight="256" filename="data/assets/texture/arkanoid.png" />
+			</Material>
+		</RendererComponent>
+		<ScriptComponent filename="data/assets/script/PowerUpBehaviour.lua" />
+		<ColliderComponent type="DYNAMIC" isTrigger="true" tag="BONUS" tagMask="PLAYER" width="0.05" height="0.025" />
+		<AudioSourceComponent>
+			<File value="data/assets/audio/powerup.ogg"/>
+			<Position x="0" y="0" z="0"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="-1"/>
+			<Volume value="1"/>
+			<Pitch value="1"/>
+			<Loop value="false"/>
+		</AudioSourceComponent>
+	</Actor>
+	<Actor type="CAMERA">
+		<TransformComponent>
+			<Position x="0.0" y="0.0" z="-1.0" />
+			<Scale factor="1.0"/>
+			<YawPitchRoll x="0" y="0" z="0"/>
+		</TransformComponent>
+		<CameraComponent>
+			<!--<Orthographic viewWidth="2.0" viewHeight="2.0" nearPlane="1.0" farPlane="10.0" />-->
+			<Perspective fovH="90" nearPlane="1.0" farPlane="10.0" />
+		</CameraComponent>
+		<AudioListenerComponent>
+			<Position x="0" y="0" z="-1"/>
+			<Velocity x="0" y="0" z="0"/>
+			<Direction x="0" y="0" z="1"/>
+			<Up x="0" y="1" z="0"/>
+			<Volume value="1"/>
+		</AudioListenerComponent>
+	</Actor>
+</Actors>
+ 

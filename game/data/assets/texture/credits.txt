@@ -1,0 +1,2 @@
+Background, brick, paddle, and powerup images were downloaded from
+http://www.spriters-resource.com/arcade/arkanoid/

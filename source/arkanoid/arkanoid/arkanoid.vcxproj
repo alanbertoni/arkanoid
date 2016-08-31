@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{884DFFE7-E341-4802-824C-DC6D4AA3DD4C}</ProjectGuid>
+    <RootNamespace>arkanoid</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\bin\$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\temp\$(Platform)$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(Platform)$(Configuration)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\bin\$(Platform)$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)..\..\temp\$(Platform)$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)$(Platform)$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../3rdParty/libvorbis-1.3.5/include;$(ProjectDir)../3rdParty/libogg-1.3.2/include;$(OPENAL_SDK)\include;$(ProjectDir)../3rdParty/tinyxml2-3.0.0;$(ProjectDir)../3rdParty/luaplus51-all/Src/LuaPlus;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>NotSet</SubSystem>
+      <AdditionalLibraryDirectories>$(OPENAL_SDK)\libs\$(PlatformName);$(ProjectDir)..\..\bin\$(PlatformName)$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libogg.lib;libvorbisfile.lib;libvorbis.lib;OpenAL32.lib;luaplus51-1201.lib;tinyxml2.lib;d3d11.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)../3rdParty/libvorbis-1.3.5/include;$(ProjectDir)../3rdParty/libogg-1.3.2/include;$(OPENAL_SDK)\include;$(ProjectDir)../3rdParty/tinyxml2-3.0.0;$(ProjectDir)../3rdParty/luaplus51-all/Src/LuaPlus;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>libogg.lib;libvorbisfile.lib;libvorbis.lib;OpenAL32.lib;luaplus51-1201.lib;tinyxml2.lib;d3d11.lib;d3dcompiler.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(OPENAL_SDK)\libs\$(PlatformName);$(ProjectDir)..\..\bin\$(PlatformName)$(Configuration)\</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\3rdParty\stb_image\stb_image.cpp" />
+    <ClCompile Include="..\actor\Actor.cpp" />
+    <ClCompile Include="..\actor\ActorComponent.cpp" />
+    <ClCompile Include="..\actor\ActorFactory.cpp" />
+    <ClCompile Include="..\actor\AudioListenerComponent.cpp" />
+    <ClCompile Include="..\actor\AudioSourceComponent.cpp" />
+    <ClCompile Include="..\actor\CameraComponent.cpp" />
+    <ClCompile Include="..\actor\ColliderComponent.cpp" />
+    <ClCompile Include="..\actor\RendererComponent.cpp" />
+    <ClCompile Include="..\actor\ScriptComponent.cpp" />
+    <ClCompile Include="..\actor\TransformComponent.cpp" />
+    <ClCompile Include="..\audio\AudioBuffer.cpp" />
+    <ClCompile Include="..\audio\AudioManager.cpp" />
+    <ClCompile Include="..\audio\OpenALUtilities.cpp" />
+    <ClCompile Include="..\collision\CollisionManager.cpp" />
+    <ClCompile Include="..\core\GameApp.cpp" />
+    <ClCompile Include="..\core\GameLogic.cpp" />
+    <ClCompile Include="..\event\EventManager.cpp" />
+    <ClCompile Include="..\graphics\D3D11Renderer.cpp" />
+    <ClCompile Include="..\graphics\GeometryGenerator.cpp" />
+    <ClCompile Include="..\graphics\RendererFactory.cpp" />
+    <ClCompile Include="..\graphics\UnlitMaterial.cpp" />
+    <ClCompile Include="..\input\KeyboardHandler.cpp" />
+    <ClCompile Include="..\log\LogManager.cpp" />
+    <ClCompile Include="..\scene\RootNode.cpp" />
+    <ClCompile Include="..\scene\Scene.cpp" />
+    <ClCompile Include="..\scene\SceneNode.cpp" />
+    <ClCompile Include="..\script\LuaManager.cpp" />
+    <ClCompile Include="..\utilities\String.cpp" />
+    <ClCompile Include="..\utilities\Time.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\3rdParty\stb_image\stb_image.h" />
+    <ClInclude Include="..\actor\Actor.h" />
+    <ClInclude Include="..\actor\ActorComponent.h" />
+    <ClInclude Include="..\actor\ActorFactory.h" />
+    <ClInclude Include="..\actor\AudioListenerComponent.h" />
+    <ClInclude Include="..\actor\AudioSourceComponent.h" />
+    <ClInclude Include="..\actor\CameraComponent.h" />
+    <ClInclude Include="..\actor\ColliderComponent.h" />
+    <ClInclude Include="..\actor\RendererComponent.h" />
+    <ClInclude Include="..\actor\ScriptComponent.h" />
+    <ClInclude Include="..\actor\TransformComponent.h" />
+    <ClInclude Include="..\audio\AudioBuffer.h" />
+    <ClInclude Include="..\audio\AudioManager.h" />
+    <ClInclude Include="..\audio\OpenALUtilities.h" />
+    <ClInclude Include="..\collision\AABB2D.h" />
+    <ClInclude Include="..\collision\CollisionManager.h" />
+    <ClInclude Include="..\core\Common.h" />
+    <ClInclude Include="..\core\GameApp.h" />
+    <ClInclude Include="..\core\GameLogic.h" />
+    <ClInclude Include="..\core\Singleton.h" />
+    <ClInclude Include="..\event\EventManager.h" />
+    <ClInclude Include="..\event\EventListener.h" />
+    <ClInclude Include="..\event\EventPublisher.h" />
+    <ClInclude Include="..\graphics\D3D11Includes.h" />
+    <ClInclude Include="..\graphics\D3D11Renderer.h" />
+    <ClInclude Include="..\graphics\Geometry.h" />
+    <ClInclude Include="..\graphics\GeometryGenerator.h" />
+    <ClInclude Include="..\graphics\IRenderer.h" />
+    <ClInclude Include="..\graphics\Material.h" />
+    <ClInclude Include="..\graphics\Mesh.h" />
+    <ClInclude Include="..\graphics\RendererFactory.h" />
+    <ClInclude Include="..\graphics\ShaderEnum.h" />
+    <ClInclude Include="..\graphics\UnlitMaterial.h" />
+    <ClInclude Include="..\input\KeyboardHandler.h" />
+    <ClInclude Include="..\log\LogManager.h" />
+    <ClInclude Include="..\scene\RootNode.h" />
+    <ClInclude Include="..\scene\Scene.h" />
+    <ClInclude Include="..\scene\SceneNode.h" />
+    <ClInclude Include="..\script\LuaManager.h" />
+    <ClInclude Include="..\script\LuaUtilities.h" />
+    <ClInclude Include="..\utilities\Math.h" />
+    <ClInclude Include="..\utilities\String.h" />
+    <ClInclude Include="..\utilities\Time.h" />
+    <ClInclude Include="..\utilities\Types.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

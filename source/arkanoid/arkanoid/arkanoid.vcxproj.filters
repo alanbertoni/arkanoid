@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="utilities">
+      <UniqueIdentifier>{5af588a4-2b95-487c-987e-a160773affdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{3bff24c1-fbfa-4759-8bfc-533ce9466f73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{a5368438-7e0d-460b-a3bd-710b4156a1c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="actor">
+      <UniqueIdentifier>{ee598fae-2324-4c54-a515-689f04c01f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{a82606b0-b96e-49d2-8365-21b16a48c33c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{979ed144-5306-4099-88dc-e47034694226}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{e44d42a9-519a-439e-89e3-3f7a7809948e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thirdParty">
+      <UniqueIdentifier>{efa8f191-6b28-4dbf-8b65-7d706cd2c869}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="input">
+      <UniqueIdentifier>{8c73127f-f4b4-4411-939f-92d80ffb6344}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="collision">
+      <UniqueIdentifier>{3292339b-2429-4384-9288-c0aaadffdc56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="audio">
+      <UniqueIdentifier>{9af40ae7-82b7-4233-8527-a76c061b8679}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\GameApp.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utilities\Time.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\log\LogManager.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\graphics\D3D11Renderer.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\graphics\RendererFactory.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\Actor.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\TransformComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\graphics\GeometryGenerator.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\RendererComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\utilities\String.cpp">
+      <Filter>utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="..\script\LuaManager.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\EventManager.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\core\GameLogic.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\ActorFactory.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\graphics\UnlitMaterial.cpp">
+      <Filter>graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scene\Scene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\ActorComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scene\SceneNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\scene\RootNode.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rdParty\stb_image\stb_image.cpp">
+      <Filter>thirdParty</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\ScriptComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\input\KeyboardHandler.cpp">
+      <Filter>input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\CameraComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\ColliderComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\collision\CollisionManager.cpp">
+      <Filter>collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\audio\OpenALUtilities.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\audio\AudioManager.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\AudioSourceComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\actor\AudioListenerComponent.cpp">
+      <Filter>actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\audio\AudioBuffer.cpp">
+      <Filter>audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\core\GameApp.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\Singleton.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utilities\Time.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\log\LogManager.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\D3D11Renderer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\IRenderer.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\RendererFactory.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\Common.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\Actor.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\TransformComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utilities\Math.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\Geometry.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\GeometryGenerator.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\RendererComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\Material.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utilities\String.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\ActorComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\utilities\Types.h">
+      <Filter>utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\script\LuaManager.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\event\EventManager.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\event\EventPublisher.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\core\GameLogic.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\ActorFactory.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\Mesh.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\D3D11Includes.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\UnlitMaterial.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\graphics\ShaderEnum.h">
+      <Filter>graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\event\EventListener.h">
+      <Filter>event</Filter>
+    </ClInclude>
+    <ClInclude Include="..\scene\Scene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\scene\SceneNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\script\LuaUtilities.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\scene\RootNode.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rdParty\stb_image\stb_image.h">
+      <Filter>thirdParty</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\ScriptComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\input\KeyboardHandler.h">
+      <Filter>input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\CameraComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\ColliderComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\collision\AABB2D.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\collision\CollisionManager.h">
+      <Filter>collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\audio\OpenALUtilities.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\audio\AudioManager.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\AudioSourceComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\actor\AudioListenerComponent.h">
+      <Filter>actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\audio\AudioBuffer.h">
+      <Filter>audio</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
