@@ -19,4 +19,4 @@ Build Instructions
 In order to properly build the project:
 	- Extract 3rdParty.zip in 3rdParty
 	- Download and install OpenAL1.1CoreSDK
-	- Edit setLibrariesPath.bat located in source/arkanoid/3rdParty setting the environment variable OPENAL_SDK to point to OpenAL install path
+	- Edit and run setLibrariesPath.bat located in source/arkanoid/3rdParty setting the environment variable OPENAL_SDK to point to OpenAL install path
